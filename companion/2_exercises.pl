@@ -10,12 +10,18 @@
 
 makesOperatingSystem(google).
 % FILL ME IN - apple and microsoft
+makesOperatingSystem(apple).
+makesOperatingSystem(microsoft).
 
 operatingSystem(freebsd).
 operatingSystem(openbsd).
 % FILL ME IN - mac_os_x, windows, and linux
+operatingSystem(mac_os_x).
+operatingSystem(windows).
+operatingSystem(linux).
 
 openSource(freebsd).
 openSource(openbsd).
 % FILL ME IN - linux
+openSource(openbsd).
 
