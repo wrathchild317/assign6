@@ -52,7 +52,7 @@ myMember(X, [_|R]) :-
 % BASE CASE - The list begins with X and Y.
 % ---FILL ME IN---
 
-myNextto(X, Y, [X, [Y|_]]).
+myNextto(X, Y, [X|[Y|_]]).
 
 % RECURSIVE CASE - The head of the list isn't interesting.
 % Recursively process the tail.
