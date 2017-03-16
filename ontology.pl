@@ -86,6 +86,7 @@ toisaroot('cellular component', ['cellular component']).
 
 toisaroot(R, L) :-
 	is_a(R, N),
-	L = [R|N].
+	toisaroot(N, T),
+	L = [R|T].
 	
 
