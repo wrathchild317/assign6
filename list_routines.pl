@@ -118,7 +118,7 @@ myLast([H|T], L) :-
 
 myLength([], 0).
 
-myLength([H|T], R):-
+myLength([H|T], R) :-
 	myLength(T, N),
 	R is N + 1.
 
@@ -130,3 +130,9 @@ myLength([H|T], R):-
 %
 
 % ---FILL ME IN---
+
+mySum([], 0).
+
+mySum([H|T], R) :-
+	mySum(T, L),
+	R is H + L.
