@@ -84,7 +84,7 @@ myNth0(0, [R|_], R).
 myNth0(X, [_|T], R) :-
 	X > 0, 
 	N is X - 1,
-	myNth(N, T, R).
+	myNth0(N, T, R).
 
 % myLast: Gets the last element of a list (the first parameter),
 % returning it in the second parameter.  For example:
