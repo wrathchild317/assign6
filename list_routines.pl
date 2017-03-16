@@ -73,7 +73,7 @@ myNextto(X, Y, [_|R]) :-
 % should simply be the head of the non-empty list.
 % ---FILL ME IN---
 
-myNth(X, [R|_], R).
+myNth(0, [R|_], R).
 
 % RECURSIVE CASE - We have a number greater than 0 and a
 % non-empty list.  Process the tail of the list recursively
