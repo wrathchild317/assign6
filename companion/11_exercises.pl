@@ -27,7 +27,7 @@
 % ANSWER: (H = a, T = [b,c,d])
 
 % QUERY: [a,[b,c,d]] = [H|T].
-% ANSWER: (H = a, T = [[b,c,d]]
+% ANSWER: (H = a, T = [[b,c,d]])
 
 % QUERY: [a] = [H|T].
 % ANSWER: (H = a, T = [])
@@ -39,4 +39,4 @@
 % ANSWER: (H = [a,b,c], T = [[d,e,f], [g,h,i]])
 
 % QUERY: [a(X,c(d,Y)), b(2,3), c(d,Y)] = [H|T].
-% ANSWER: (H = a(X, c(d,Y)) T = [b(2,3), c(d,Y)]
+% ANSWER: (H = a(X, c(d,Y)) T = [b(2,3), c(d,Y)])

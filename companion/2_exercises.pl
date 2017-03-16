@@ -23,5 +23,5 @@ operatingSystem(linux).
 openSource(freebsd).
 openSource(openbsd).
 % FILL ME IN - linux
-openSource(openbsd).
+openSource(linux).
 
