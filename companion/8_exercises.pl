@@ -12,8 +12,12 @@
 
 factorial(0, 1).
 
-factorial(value, answer) :-
-	answer is value * factorial(value - 1, answer).
+factorial(Value, Answer) :-
+	Value > 0,
+	New_Value is Value - 1,
+	factorial(New_Value, Answer_New),
+	Answer is Value * Answer_New.
+	
 
 % With your factorial routine in hand, the following queries should
 % all succeed:
