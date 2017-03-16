@@ -10,6 +10,11 @@
 
 % ---REPLACE ME WITH CODE---
 
+factorial(0, 1).
+
+factorial(value, answer) :-
+	answer is value * factorial(value - 1, answer).
+
 % With your factorial routine in hand, the following queries should
 % all succeed:
 
