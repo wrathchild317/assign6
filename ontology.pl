@@ -89,4 +89,19 @@ toisaroot(R, L) :-
 	toisaroot(N, T),
 	L = [R|T].
 	
+	
+subconcept(R, L) :-
+	is_a(R, L).
+
+subconcept(R, L) :-
+	part_of(R, L).
+	
+subconcept(R, L) :-
+	is_a(R, N),
+	subconcept(N, L).
+	
+subconcept(R, L) :-
+	part_of(R, N),
+	subconcept(N, L).
+	
 
