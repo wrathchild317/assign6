@@ -116,6 +116,12 @@ myLast([H|T], L) :-
 
 % ---FILL ME IN---
 
+myLength([], 0).
+
+myLength([H|T], R):-
+	myLength(T, N),
+	R is N + 1.
+
 % mySum: takes a list (presumably of integers) and returns their
 % summation in the second parameter.  For example:
 %
