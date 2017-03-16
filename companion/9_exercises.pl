@@ -19,7 +19,7 @@ xGreaterY(coordinate(X, Y)) :-
 % ---REPLACE ME WITH CODE---
 
 yGreaterX(coordinate(X, Y)) :-
-		Y < X.
+		Y > X.
 
 % Your definition should allow the following query to succeed:
 %
