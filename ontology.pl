@@ -97,11 +97,11 @@ subconcept(R, L) :-
 	part_of(R, L).
 	
 subconcept(R, L) :-
-	is_a(R, N),
+	part_of(R, N),
 	subconcept(N, L).
 	
 subconcept(R, L) :-
-	part_of(R, N),
+	is_a(R, N),
 	subconcept(N, L).
 	
 
