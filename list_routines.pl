@@ -73,11 +73,18 @@ myNextto(X, Y, [_|R]) :-
 % should simply be the head of the non-empty list.
 % ---FILL ME IN---
 
+myNth(X, [R|_], R).
+
 % RECURSIVE CASE - We have a number greater than 0 and a
 % non-empty list.  Process the tail of the list recursively
 % with the number - 1.  Keep in mind that to perform any sort
 % of arithmetic, we must use `is` in Prolog.
 % ---FILL ME IN---
+
+myNth(X, [_|T], R) :-
+	X > 0, 
+	N is X - 1,
+	myNth(N, T, R).
 
 % myLast: Gets the last element of a list (the first parameter),
 % returning it in the second parameter.  For example:
